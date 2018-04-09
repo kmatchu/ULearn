@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Bree+Serif|Dosis');
+
+body, html, .container {
+    color: #252525;
+    height: 100%;
+    -webkit-text-size-adjust: auto;
+    -moz-text-size-adjust: auto;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+}
+
+h3, h4, h5 {
+    font-family: 'Bree Serif', serif;
+    text-transform: uppercase;
+}
+
+a, a:visited {
+    color: #777;
+}
+
+a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+.container.fullPage {
+    padding-top: 0;
+}
+
+body {
+    background: url("../images/bg.png");
+}
+
+.step {
+    font-family: 'Bree Serif', serif;
+    font-size: 22px;
+    vertical-align: middle;
+    font-weight: 500;
+    border-bottom: 1px dotted #FFB442;
+    margin-right: 4px;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.contentContainer {
+    border-top: 2px solid #FFB442;
+    border-bottom: 2px solid #FFB442;
+}
+
+.content {
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+#logo {
+    font-size: 80px;
+    font-weight: 600;
+    color: #000;
+    font-family: 'Bree Serif', serif;
+    line-height: 1;
+    cursor: pointer;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#logo-subtext {
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+    display: none;
+}
+
+.navbar.navbar-default {
+    margin-bottom: 0;
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.title-header {
+    padding-top: 15px;
+}
+
+/* .navbar-header, .phone-nav,  */
+.navbar-brand {
+    height: auto;
+}
+
+.miscLinks {
+    font-size: 15px;
+    font-family: 'Abel', sans-serif;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 8px;
+    margin-right: 25px;
+}
+
+.links {
+    font-size: 15px;
+    font-family: 'Abel', sans-serif;
+    font-weight: 600;
+    /* position: absolute;
+    bottom: 0;
+    right: 0; */
+    margin-right: 10px;
+}
+
+/* .navbar-toggle, .navbar-toggle:hover {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+} */
+
+#userGreeting, #progressbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height:20px;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-top: 5px;
+    cursor: default;
+}
+
+#currentLevel, #nextLevel {
+    font-size: 22px;
+}
+
+#userInfo {
+    font-weight: 800;
+    color: #FFB442;
+    text-transform: uppercase;
+}
+
+.about {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 36px;
+}
+
+.progwrapper {
+    width: 175px;
+    height: 15px;  
+    background: #252525;
+    text-align: center;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+#currentLevel {
+    padding-right: 10px;
+}
+
+#nextLevel {
+    padding-left: 10px;
+}
+
+.progress {
+    height: 15px;  
+    background: #FFB442;
+    text-align: left;
+    margin-bottom: 1px; 
+    border-radius: 4px;
+    transition: width .5s linear;     
+}
+
+.wrap.mainContent {
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border: 1px solid #e7e7e7;
+    background-color: #f8f8f8;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.nav-tabs.nav-justified {
+    margin-bottom: 0;
+    /* padding-top: 15px; */
+    padding-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.nav-tabs.nav-justified a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 0;
+}
+
+/* .nav-tabs.nav-justified li {
+    display: inline-block;
+} */
+
+.nav-tabs.nav-justified a:hover {
+    color: inherit;
+}
+
+.availHeader, .unavailHeader{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.lang > img {
+    border: 1px solid #252525;
+    -webkit-box-shadow: 1px 1px 4px 1px #252525;
+    box-shadow: 1px 1px 4px 1px #252525;
+    margin-bottom: 10px;
+    background: transparent;    
+    border-radius: 4px;
+    border: 1px solid #252525;
+}
+
+.availablelang .lang > img  {
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.availablelang .lang > img:hover {
+    opacity: 1.0;
+    width: 100px;
+}
+
+.unavailablelang .lang > img  {
+    opacity: 0.4;
+    cursor: default;
+}
+
+.unavailablelang .lang > img {
+    -webkit-filter: grayscale(100%);
+       -moz-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+            filter: grayscale(100%); 
+}
+
+.selected {
+    opacity: 1.0;
+    width: 100px;
+}
+
+.unselected {
+    opacity: 0.7;
+}
+
+.langSelection {
+    padding-bottom: 15px;
+}
+
+.langFlags {
+    margin-bottom: 30px;
+}
+
+.langSeparator {
+    height: 50px;
+    background: #888;
+}
+
+.languageHeader, .gameHeader, .diffHeader, .playHeader {
+    border-top: 8px solid #FFB442;
+    padding-top: 10px;
+    font-size: 16px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 500;
+}
+
+#langdescr {
+    text-align: justify;
+}
+
+#langtitle, .gameHeader, .diffHeader, .playHeader  {
+    text-align: center;
+}
+
+#langtitle {
+    margin-top: 5px;
+}
+
+#langhr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.diffHeader, .playHeader  {
+    margin-bottom: 10px;
+}
+
+.game {
+    width: 220px;
+    height: 120px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #252525;
+    cursor: pointer;
+}
+
+.figure-caption {
+    padding-top: 5px;
+}
+
+#hangmansel {
+    background-image: url("../images/hangman.jpg");
+}
+
+#jumblesel {
+    background-image: url("../images/jumble.jpg");
+}
+
+#wssel {
+    background-image: url("../images/wordsearch.jpg");
+}
+
+.game:hover {
+    border: 4px ridge #FFB442;
+    -webkit-box-shadow: 1px 1px 4px 1px #252525;
+    box-shadow: 1px 1px 4px 1px #252525;
+}
+
+.clicked {
+    border: 4px ridge #FFB442;
+    -webkit-box-shadow: 1px 1px 4px 1px #252525;
+    box-shadow: 1px 1px 4px 1px #252525;
+}
+
+.unclicked {
+    border: 1px solid #252525;
+}
+
+.figure {
+    margin-top: 10px;
+}
+
+.gameSel, .diffSel {
+    text-align: center;
+}
+
+.diff {
+    color: #252525;
+    background: #FFB442;
+    font-weight: 600;
+}
+
+.chosen {
+    color: #fff;
+    background: rgb(255, 179, 65);
+}
+
+.unchosen {
+    color: #252525;
+    background: #FFB442;
+}
+
+.playHeader a {
+    text-decoration: none;
+    border: none;
+}
+
+#playBtn {
+    width: 75px;
+    height: 87px;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: transparent;
+    background-image: url("../images/playbtn.png");
+    cursor: pointer;
+}
+
+#playBtn:hover,
+#playBtn:focus,
+#playBtn:active,
+#playBtn.active.focus, 
+#playBtn.active:focus, 
+#playBtn.active:hover, 
+#playBtn:active.focus, 
+#playBtn:active:focus, 
+#playBtn:active:hover
+{
+    background-image: url("../images/playbtnhover.png");
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.carouselRow {
+    padding-left:0;
+    padding-right: 0;
+}
+
+.carousel {
+    max-width: 1128px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border-top: 8px solid #FFB442;
+    border-bottom: 8px solid #FFB442;
+}
+
+.carousel-inner {
+    margin: auto;
+    width: auto;
+    height: auto;
+}
+
+.carousel-caption {
+    height: auto;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 4px;
+    -webkit-box-shadow: 1px 1px 4px 1px #252525;
+    box-shadow: 1px 1px 4px 1px #252525;
+    padding-top: 0;
+    background: #f3f3f3;
+    color: #252525;
+    opacity: 0.8;
+}
+
+.modal-body {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.modal-footer {
+    text-align: center;
+}
+
+.login-form, .signup-form {
+    width: 100%;
+}
+
+.login-form {
+    border-bottom: 1px solid #252525;
+}
+
+.login-modal-footer {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.modal-header .close {
+    margin-top: -30px;
+    font-size: 30px;
+}
+
+.signup-modal-header {
+    border-bottom: 0;
+}
+
+.user-form-group,
+.email-form-group,
+.pwd-form-group,
+.rptpwd-form-group {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.user-form-group > p,
+.email-form-group > p,
+.pwd-form-group > p,
+.rptpwd-form-group > p {
+    margin: 0;
+}
+
+.user-form-group > input[type=text],
+.email-form-group > input[type=text],
+.rptpwd-form-group > input[type=password],
+.pwd-form-group > input[type=password] {
+    width: 90%;
+}
+
+.loginSubmit, .guestlink, .signupSubmit {
+    font-weight: 600;
+}
+
+.loginSubmit, .signupSubmit {
+    color: #252525;
+    background: #FFB442;
+}
+
+.loginSubmit:hover,
+.loginSubmit:visited,
+.loginSubmit:focus,
+.loginSubmit.focus,
+.loginSubmit.active.focus, 
+.loginSubmit.active:focus, 
+.loginSubmit.active:hover, 
+.loginSubmit:active.focus, 
+.loginSubmit:active:focus, 
+.loginSubmit:active:hover,
+.signupSubmit:hover,
+.signupSubmit:visited,
+.signupSubmit:focus,
+.signupSubmit.focus,
+.signupSubmit.active.focus, 
+.signupSubmit.active:focus, 
+.signupSubmit.active:hover, 
+.signupSubmit:active.focus, 
+.signupSubmit:active:focus, 
+.signupSubmit:active:hover,
+.diff:hover,
+.diff:visited,
+.diff:focus,
+.diff.focus,
+.diff.active.focus, 
+.diff.active:focus, 
+.diff.active:hover, 
+.diff:active.focus, 
+.diff:active:focus, 
+.diff:active:hover
+ {
+    background: rgb(255, 179, 65);
+}
+
+.error, .gameErr {
+    color:#d44b4b;
+}
+
+.gameErr {
+    text-align: center;
+}
+
+.footer {
+    height: 90px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.footer div {
+    padding-top: 5px;
+}
+
+.flag{
+    width:100%
+}
+@keyframes example {
+    50%  {font-size: 30px;}
+
+}
+
+#s1 {
+    animation-name: example;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+#s2 {
+    animation-name: example;
+    animation-duration: 2s;
+    animation-delay: 2s;
+}
+#s3 {
+    animation-name: example;
+    animation-duration: 2s;
+    animation-delay: 3s;
+}
+
+.cont {
+    width: 250px;
+    display: inline-block;
+    text-align: left
+  }
+  .bar {
+    background: rgb(0, 0, 0);
+    width: 5px;
+    height: 22px;
+  }
+  .bar1 {
+    float: left;
+  }
+  .bar2 {
+    float: right;
+  }
+  .ball {
+    background: rgb(255, 179, 65);
+    width: 5px;
+    height: 3px;
+    position: relative;
+    top: 5px;
+    left: 10px;
+  }
+  .pong{
+      text-align: left;
+      padding-left: 52.5px;
+      padding-bottom: 10px;
+  }
